@@ -2,8 +2,6 @@
 pragma solidity ^0.8.24;
 
 contract BitwiseOperations {
-    uint256 x;
-
     function checkAndUpdateX(uint256 x) external pure returns (uint256) {
         // 最上位のバイトをチェック
         bytes1 highestByte = bytes1(uint8(x >> 248));
